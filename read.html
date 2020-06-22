@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="robots" content="index, follow" />
+    <title>methrec</title>
+
+    <!-- Stylesheets
+    ================================================= -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    	<!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
+    <script src="index.js"></script>
+  </head>
+  <body>
+
+    <!-- Header
+    ================================================= -->
+    <header id="header-inverse">
+      <nav class="navbar navbar-default menu">
+        <div class="container">
+
+
+
+            <a class="navbar-brand"><img src="images/logo.png" alt="logo" /></a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right main-menu">
+
+
+              <li class="dropdown">
+                <a href="index.html"  aria-haspopup="true" aria-expanded="false">Home </a>
+                <ul class="dropdown-menu newsfeed-home">
+                  <li><a href="index.html">home</a></li>
+
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a href="Add.html" aria-haspopup="true" aria-expanded="false">Add Data </a>
+                <ul class="dropdown-menu login">
+
+                </ul>
+              </li>
+
+
+                            <li class="dropdown">
+                              <a href="delete.html" aria-haspopup="true" aria-expanded="false" >Delete Data </a>
+                              <ul class="dropdown-menu login">
+
+                              </ul>
+                            </li>
+
+                            <li class="dropdown">
+                              <a href="read.html" aria-haspopup="true" aria-expanded="false">Read Data </a>
+                              <ul class="dropdown-menu login">
+
+                              </ul>
+                            </li>
+
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+      </nav>
+    </header>
+    <!--Header End-->
+
+    <!-- Landing Page Contents
+    ================================================= -->
+    <div id="lp-register">
+      <div class="container wrapper">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="intro-texts">
+              <h1 class="text-white">MethRec</h1>
+            <br>
+						<div class="tab-content">
+
+								<h3>Read Data</h3>
+							</div>
+
+
+						<form name="registration_form" id='registration_form' class="form-inline" method="POST">
+							<div class="row">
+								<div class="form-group col-xs-12">
+									<label for="ID" class="sr-only">ID</label>
+									<input id="read_id" class="form-control input-group-lg" type="number" name="ID" title="Enter ID " placeholder="ID" required/>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="form-group col-xs-12">
+									<label for="password" class="sr-only">Password</label>
+									<input id="read_password" class="form-control input-group-lg" type="password" name="password" title="Enter password" placeholder="Password" required/>
+								</div>
+							</div>
+
+
+
+<input type="button" onclick="readvalue()" class="btn btn-primary" value="GET DATA">
+</form><!--Register Now Form Ends-->
+
+
+
+					</div>
+            </div>
+          </div>
+		        <!--Register Form-->
+<br><br><br><br><br><br><br>
+            <div class="limiter">
+          		<div class="container-table100">
+          			<div class="wrap-table100">
+          				<div class="table100">
+          					<table id="mytable">
+          						<thead>
+          							<tr class="table100-head">
+          								<th class="column1">ID</th>
+          								<th class="column2">Name</th>
+                          <th class="column3">Date</th>
+          								<th class="column4">Data</th>
+          								<th class="column5">Allergy</th>
+
+
+          							</tr>
+          						</thead>
+          						<tbody>
+          								<tr>
+          									<td class="column1"><br> </td>
+          									<td class="column2"><br> </td>
+          									<td class="column3"> <br> </td>
+          									<td class="column4"> <br> </td>
+                            <td class="column5"> <br> </td>
+
+          								</tr>
+
+
+
+          						</tbody>
+          					</table>
+          				</div>
+          			</div>
+          		</div>
+          	</div>
+
+
+
+								<!--Registration Form Contents-->
+
+
+
+    <!--preloader-->
+    <div id="spinner-wrapper">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- Scripts
+    ================================================= -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,155 @@
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="robots" content="index, follow" />
+    <title>methrec</title>
+
+    <!-- Stylesheets
+    ================================================= -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+
+    <!-- Header
+    ================================================= -->
+    <header id="header-inverse">
+      <nav class="navbar navbar-default menu">
+        <div class="container">
+
+
+
+            <a class="navbar-brand"><img src="images/logo.png" alt="logo" /></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right main-menu">
+
+
+              <li class="dropdown">
+                <a href="index.html"  aria-haspopup="true" aria-expanded="false">Home </a>
+                <ul class="dropdown-menu newsfeed-home">
+                  <li><a href="index.html">home</a></li>
+
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a href="Add.html" aria-haspopup="true" aria-expanded="false">Add Data </a>
+                <ul class="dropdown-menu login">
+
+                </ul>
+              </li>
+
+
+                            <li class="dropdown">
+                              <a href="delete.html" aria-haspopup="true" aria-expanded="false">Delete Data </a>
+                              <ul class="dropdown-menu login">
+
+                              </ul>
+                            </li>
+
+                            <li class="dropdown">
+                              <a href="read.html" aria-haspopup="true" aria-expanded="false">Read Data </a>
+                              <ul class="dropdown-menu login">
+
+                              </ul>
+                            </li>
+
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+      </nav>
+    </header>
+    <!--Header End-->
+
+    <!-- Landing Page Contents
+    ================================================= -->
+    <div id="lp-register">
+      <div class="container wrapper">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="intro-texts">
+              <h1 class="text-white">MethRec</h1>
+            <br>
+						<div class="tab-content">
+
+								<h3>Add Data</h3>
+							</div>
+
+						<form name="registration_form" id='registration_form' class="form-inline" method="POST">
+							<div class="row">
+								<div class="form-group col-xs-12">
+									<label for="ID" class="sr-only">ID</label>
+									<input id="add_id"  required class="form-control input-group-lg" type="number" inputmode="numeric" name="ID" title="Enter ID " placeholder="ID"/>
+								</div>
+							</div>
+								<div class="row">
+								<div class="form-group col-xs-12">
+									<label for="add_data" class="sr-only">Data</label>
+									<input id="add_data" required  class="form-control input-group-lg" type="text" pattern="[a-zA-Z0-9 ]+" name="add_data" title="add_data" placeholder="Add Medical Data"/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group col-xs-12">
+									<label for="add_allergies" class="sr-only">Allergies</label>
+									<input id="add_allergies"  class="form-control input-group-lg" type="text" pattern="[a-zA-Z0-9 ]+" name="add_allergies" title="add_allergies" placeholder="Allergies"/>
+								</div>
+							</div>
+
+              <div class="row">
+                <div class="form-group col-xs-12">
+                  <label for="Date" class="sr-only">Date</label>
+                  <input id="add_date" required  class="form-control input-group-lg" type="date"/>
+                </div>
+              </div>
+
+
+
+
+							<div class="row">
+								<div class="form-group col-xs-12">
+									<label for="password" class="sr-only">Password</label>
+									<input id="add_password" required  class="form-control input-group-lg" type="password" name="password" pattern="[0-9]*" title="Enter password" placeholder="Password"/>
+								</div>
+							</div>
+
+<button onclick="addvalues()" class="btn btn-primary">ADD DATA</button>
+						</form><!--Register Now Form Ends-->
+
+
+					</div>
+            </div>
+          </div>
+
+                  <!--Register Form-->
+
+
+
+
+    <!--preloader-->
+    <div id="spinner-wrapper">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- Scripts
+    ================================================= -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+      <script src="js/script.js"></script>
+
+  </body>
+</html>
